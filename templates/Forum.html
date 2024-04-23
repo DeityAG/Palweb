@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <style>
+        body {
+            text-align: center;
+            background-image:url("https://i.ibb.co/gVYJBmN/e9bac6a8c37cca15759e78200e7c8965.jpg" );
+            background-position:center ;
+            background-repeat: no-repeat;
+            background-size: 90%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Forum</h1>
+    </header>
+    <br><br><br><br><br><br><br>
+    <h2>Enter Query</h2>
+    <form action="/writequery" method="POST">
+        <label for="query">Enter your query:</label><br>
+        <input type="text" id="query" name="query"><br>
+        <button type="submit">Submit Query</button>
+    </form>
+    <br><br><br>
+
+    <h2>Existing Queries</h2>
+    <ul>
+       <!-- forum backend inetegration-->
+    </ul>
+
+    <form action="/replyquery" method="POST">
+        <label for="reply">Enter your reply:</label><br>
+        <input type="text" id="reply" name="reply"><br>
+        <button type="submit">Submit Reply</button>
+    </form>
+    <br><br><br><br>
+    <form action="/addlink" method="POST">
+        <label for="link">Add a link:</label><br>
+        <input type="text" id="link" name="link"><br>
+        <button type="submit">Add Link</button>
+    </form>
+
+    <h2>Existing Links</h2>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <ul>
+        <!--  backend -->
+       
+    </ul>
+
+    <footer>
+        <p>Contact: your@email.com | Phone: +123456789</p>
+    </footer>
+</body>
+</html>
